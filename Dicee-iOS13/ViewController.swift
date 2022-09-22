@@ -10,10 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var diceImageView1: UIImageView!
+    @IBOutlet weak var diceImageView2: UIImageView!
+    
+    @IBOutlet weak var rollButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        diceImageView1.alpha = 0.8
+        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+        diceImageView2.alpha = 0.8
+        
+        }
 
 
 }
